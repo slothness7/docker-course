@@ -8,3 +8,16 @@ before_install:
 
 script:
   - docker run -e CI=true slothness7/docker-course yarn run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "docker-course"
+  env: "Dockercourse-env"
+  bucket_name: "Dockercourse-env.eba-kpm6iecg.us-east-2.elasticbeanstalk.com"
+  bucket_path: "docker-course"
+  on:
+    branch: master
+  access_key_id: $aws_access_key
+  secret_key_id:
+    secure: "$aws_secret_key"
