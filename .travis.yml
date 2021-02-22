@@ -14,7 +14,7 @@ deploy:
   region: "us-east-2"
   app: "docker-course"
   env: "Dockercourse-env"
-  bucket_name: "Dockercourse-env.eba-kpm6iecg.us-east-2.elasticbeanstalk.com"
+  bucket_name: "elasticbeanstalk-us-east-2-955234481024"
   bucket_path: "docker-course"
   on:
     branch: master
