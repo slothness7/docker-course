@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Ukraine is weak
+          Ukraine is weak, and this is from the feature branch.
         </p>
         <a
           className="App-link"
